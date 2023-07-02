@@ -1,0 +1,12 @@
+@media (max-width: 767px) {
+  html {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    margin: auto;
+    width: 560px;
+  }
+}

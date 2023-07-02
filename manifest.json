@@ -8,6 +8,17 @@
       "js/background.js"
     ]
   },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://syndication.twitter.com/srv/timeline-profile/screen-name/*",
+        "https://platform.twitter.com/embed/Tweet.html?id=*"
+      ],
+      "css": [
+        "css/twitter.css"
+      ]
+    }
+  ],
   "permissions": [
     "webRequest",
     "*://*/*",
