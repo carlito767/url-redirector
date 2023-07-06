@@ -9,8 +9,8 @@ chrome.webRequest.onBeforeRequest.addListener(
 );
 
 function load() {
-  rules.push({ sourcePattern: "^https://twitter.com/([^/]+)$", destinationPattern: "https://syndication.twitter.com/srv/timeline-profile/screen-name/$1" });
-  rules.push({ sourcePattern: "^https://twitter.com/[^/]+/status/([0-9]+).*$", destinationPattern: "https://platform.twitter.com/embed/Tweet.html?id=$1" });
+  rules.push({ sourcePattern: "^https://twitter.com/([^/]+)$", destinationPattern: "https://tweettunnel.com/$1" });
+  rules.push({ sourcePattern: "^https://twitter.com/.+/status/([0-9]+).*$", destinationPattern: "https://platform.twitter.com/embed/Tweet.html?id=$1" });
 }
 
 function filterRequest(details) {
