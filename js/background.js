@@ -12,10 +12,10 @@ function load() {
   // https://twitter.com/SCREEN_NAME
   // https://twitter.com/SCREEN_NAME/
   // https://twitter.com/SCREEN_NAME?parameters
-  rules.push({ sourcePattern: "^https://twitter.com/([A-Za-z0-9_]+)(/?|\\?.*)$", destinationPattern: "https://tweettunnel.com/$1" });
+  rules.push({ sourcePattern: "^https://twitter.com/([A-Za-z0-9_]+)(/?|\\?.*)$", destinationPattern: "https://nitter.net/$1" });
   // https://twitter.com/SCREEN_NAME/status/TWEET_ID
   // https://twitter.com/SCREEN_NAME/status/TWEET_ID?parameters
-  rules.push({ sourcePattern: "^https://twitter.com/.+/status/([0-9]+).*$", destinationPattern: "https://platform.twitter.com/embed/Tweet.html?id=$1" });
+  rules.push({ sourcePattern: "^https://twitter.com/(.+)/status/([0-9]+).*$", destinationPattern: "https://nitter.net/$1/status/$2#m" });
 }
 
 function filterRequest(details) {
