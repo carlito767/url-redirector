@@ -14,6 +14,13 @@ const rulesMap = {
       destinationPattern: "https://nitter.net/$1/status/$2#m"
     },
   ],
+  "www.youtube.com": [
+    // https://www.youtube.com/watch?v=VIDEO_ID
+    {
+      sourcePattern: "^https://www.youtube.com/watch\\?v=(.*)$",
+      destinationPattern: "https://piped.video/watch?v=$1",
+    },
+  ],
 };
 
 chrome.webRequest.onBeforeRequest.addListener(
