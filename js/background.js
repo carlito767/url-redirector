@@ -5,13 +5,13 @@ const rulesMap = {
     // https://twitter.com/SCREEN_NAME?parameters
     {
       sourcePattern: "^https://twitter.com/([A-Za-z0-9_]+)(/?|\\?.*)$",
-      destinationPattern: "https://nitter.net/$1",
+      destinationPattern: "https://nitter.catsarch.com/$1",
     },
     // https://twitter.com/SCREEN_NAME/status/TWEET_ID
     // https://twitter.com/SCREEN_NAME/status/TWEET_ID?parameters
     {
       sourcePattern: "^https://twitter.com/(.+)/status/([0-9]+).*$",
-      destinationPattern: "https://nitter.net/$1/status/$2#m"
+      destinationPattern: "https://nitter.catsarch.com/$1/status/$2#m"
     },
   ],
   "www.youtube.com": [
